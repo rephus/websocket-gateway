@@ -3,11 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Websocket gateway</title>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" sizes="64x64">  
   <script src="/socket.io/socket.io.js"></script>
-  <script src="main.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
 </head>
 <body>
-  <p>Client is <b id='status'></b></p>
-  <button id='button' onclick='sendData()' >Button</button>
+
+    <nav>
+        <div class="nav-wrapper black">
+          <img class='logo' src='icon.png' />
+
+        </div>
+      </nav>
+            
+    <div class="container">
+        <div class="row card-panel grey lighten-3" >
+            <div class="col s6">
+              <button class="btn-floating btn-large waves-effect waves-light z-depth-2 red" 
+                 onclick='sendData(1)' >1</button>
+              </div>
+
+              <div class="col s6">
+                  <button class="btn-floating btn-large waves-effect waves-light z-depth-2 red" 
+                     onclick='sendData(2)' >2</button>
+              </div>
+
+              <div class="col s6">
+                  <button class="btn-floating btn-large waves-effect waves-light red" 
+                      onclick='sendData(3)' >3</button>
+                  </div>
+
+                  <div class="col s6">
+                      <button class="btn-floating btn-large waves-effect waves-light red" 
+                          onclick='sendData(4)' >4</button>
+                      </div>
+
+                      <div class="col s6">
+                          <button class="btn-floating btn-large waves-effect waves-light red" 
+                            onclick='sendData(5)' >5</button>
+                          </div>
+
+                      <div class="col s6">
+                          <button class="btn-floating btn-large waves-effect waves-light red" 
+                            onclick='sendData(6)' >6</button>
+                          </div>
+        </div>
+        <div class="row center" >
+            <p>Client is <b id='status'></b></p>
+        </div>
+      </div>
+
+      <script src="main.js"></script>
+      
 </body>
 </html>

@@ -1,0 +1,17 @@
+.row {
+    width: 300px;
+    margin:auto !important; 
+}
+
+button {
+    margin: 20px !important; 
+}
+
+.logo {
+    width: 48px;   
+    margin:5px; 
+}
+
+.container {
+    padding:30px;
+}
